@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 { 
+            font-size: 2rem;
+            margin: 15px 0;
+            text-align: center;
+        }
+        section {
+            width: 350px;
+            height: 570px;
+            background-color: slategray;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px; 
+        }
+        #card {
+            margin: 0 auto;
+        }
+        .image-wrapper {
+            width: 100%;
+            overflow: hidden;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .image-wrapper img {
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .downpart {
+            padding: 1.25rem;
+        }
+        h2 {
+            font-size: 1.7rem;
+            margin: 8px 0;
+            color: white
+        }
+        .flexbox-1 {
+            padding: 1rem;
+            display: flex;
+            margin-top: 2rem;
+            border: 1px dashed black;
+            justify-content: space-evenly;
+            height: 900px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox-1</h1>
+    <div class="flexbox-1">
+    <section>
+    <div class="image-wrapper">
+        <img src="/image/pexels-nati-87264186-25949536.jpg" alt="food items">
+    </div>
+    <div class="downpart">
+        <h2>A white plate with flower and bread on it</h2>
+        <div>
+         <span>Favourite</span> 
+        </div>
+    </div>
+</section>
+<section>
+    <div class="image-wrapper">
+        <img src="/image/pexels-nati-87264186-25949536.jpg" alt="food items">
+    </div>
+    <div class="downpart">
+        <h2>A white plate with flower and bread on it</h2>
+        <div>
+         <span>Favourite</span> 
+        </div>
+    </div>
+</section>
+<section>
+    <div class="image-wrapper">
+        <img src="/image/pexels-nati-87264186-25949536.jpg" alt="food items">
+    </div>
+    <div class="downpart">
+        <h2>A white plate with flower and bread on it</h2>
+        <div>
+         <span>Favourite</span> 
+        </div>
+    </div>
+</section>
+</div>
+</body>
+</html>
